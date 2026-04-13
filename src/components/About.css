@@ -1,0 +1,12 @@
+.about {
+  margin: 30px;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.about h1 {
+  margin-bottom: 15px;
+}

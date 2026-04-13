@@ -1,0 +1,30 @@
+.aside {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.aside:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen */
+.m1-img {
+  width: 150px; 
+  height: auto;
+  border-radius: 15px;
+  margin: 10px auto;
+  display: block;
+  transition: 0.3s;
+}
+
+.m1-img:hover {
+  transform: scale(1.1);
+}
+
+.m1-img:hover {
+  transform: scale(1.05);
+}
