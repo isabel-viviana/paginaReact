@@ -4,7 +4,9 @@ import Aside from "./Aside";
 
 export const Home = () => {
   return (
-    <div>
+    <div className='home'>
+      <main className='main-content'>
+        <div className='card'>
         <h1>que es react</h1>
         <p>React es una de las librerías más influyentes en el desarrollo moderno de interfaces web. Creada por Meta, su propuesta se centra en facilitar la construcción de interfaces de usuario a través de componentes reutilizables y un enfoque declarativo que simplifica la forma en que los desarrolladores interactúan con el DOM.</p>
 
@@ -18,11 +20,11 @@ export const Home = () => {
         <p>Su principal aporte es el Virtual DOM, que optimiza las actualizaciones de la interfaz y mejora el rendimiento de las aplicaciones. Gracias a esto, React ofrece experiencias más rápidas y fluidas incluso en proyectos complejos.</p>
 
         <p>Aunque no es una solución completa por sí misma, ya que necesita herramientas externas para funciones como el enrutamiento o la gestión de estado, su flexibilidad y gran ecosistema la han convertido en una opción clave para el desarrollo frontend actual.</p>
-
-        <Aside />
+        
+        </div>
+      </main>
+      <Aside />
     </div>
-
-
   )
 }
 

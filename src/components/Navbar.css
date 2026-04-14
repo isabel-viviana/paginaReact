@@ -1,41 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
 .navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTENEDOR */
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 30px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
 }
 
-.navbar h2 {
+/* LOGO */
+.logo {
+  color: #fff;
   font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.navbar a {
-  color: white;
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+/* LINKS */
+.nav-links a {
   text-decoration: none;
-  margin-left: 25px;
-  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
   position: relative;
   transition: 0.3s;
 }
 
-/* Línea animada */
-.navbar a::after {
-  content: '';
+/* EFECTO SUBRAYADO ANIMADO */
+.nav-links a::after {
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
-  background: white;
-  left: 0;
   bottom: -5px;
+  left: 0;
+  background: #fff;
   transition: 0.3s;
 }
 
-.navbar a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
 
-.navbar a:hover {
-  transform: scale(1.1);
+/* HOVER TEXTO */
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* EFECTO MOVIMIENTO */
+.nav-links li:hover {
+  transform: translateY(-2px);
 }

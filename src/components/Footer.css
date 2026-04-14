@@ -1,13 +1,58 @@
+/* FOOTER */
 .footer {
-  background: linear-gradient(90deg, #141e30, #243b55);
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  box-shadow: 0 -5px 20px rgba(0,0,0,0.4);
+  margin-top: 50px;
+  padding: 40px 20px;
+
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
 }
 
-.footer p {
-  margin: 0;
-  font-size: 14px;
-  opacity: 0.8;
+/* CONTENEDOR */
+.footer-container {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  padding: 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.footer-container:hover {
+  transform: translateY(-5px);
+}
+
+/* TITULO */
+.footer-container h2 {
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #00f5a0, #00d9f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* INFO */
+.footer-info p {
+  margin: 10px 0;
+  font-size: 15px;
+  opacity: 0.9;
+
+  transition: 0.3s;
+}
+
+/* HOVER TEXTO */
+.footer-info p:hover {
+  color: #00f5a0;
+  transform: scale(1.05);
 }
